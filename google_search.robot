@@ -62,7 +62,7 @@ Input Search-Yahoo Term
     Input Text      name=p                 ${SEARCH_TERM}
 
 Press Enter Yahoo Search
-    Press Keys    name=q    ENTER
+    Press Keys    name=p    ENTER
 
 Verify Search Results-Yahoo
     Wait Until Page Contains    ${SEARCH_RESULT}
