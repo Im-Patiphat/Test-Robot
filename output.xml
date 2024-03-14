@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-14T17:04:14.622779" rpa="false" schemaversion="5">
+<suite id="s1" name="Google Search" source="D:\017\work\test\Robot\google_search.robot">
+<test id="s1-t1" name="Search Google and Verify Results-1" line="11">
+<kw name="Open Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:14.763372" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T17:04:14.763372" elapsed="1.971624"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:14.763372" elapsed="1.971624"/>
+</kw>
+<kw name="Input Search Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:16.734996" level="INFO">Typing text 'robot framework' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T17:04:16.734996" elapsed="0.087199"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:16.734996" elapsed="0.087199"/>
+</kw>
+<kw name="Press Enter Google Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:16.822195" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-03-14T17:04:17.122674" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T17:04:17.122674" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:16.822195" elapsed="1.965709"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:16.822195" elapsed="1.965709"/>
+</kw>
+<kw name="Verify Search Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T17:04:18.788911" elapsed="0.019527"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:18.825939" level="INFO">Current page contains text 'Automate'.</msg>
+<arg>${SEARCH_RESULT}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T17:04:18.808438" elapsed="0.017501"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:18.788911" elapsed="0.037028"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:18.825939" elapsed="2.052724"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:14.763372" elapsed="6.115291"/>
+</test>
+<test id="s1-t2" name="Search Google and Verify Results-2" line="18">
+<kw name="Open Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:20.878663" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T17:04:20.878663" elapsed="2.031124"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:20.878663" elapsed="2.031124"/>
+</kw>
+<kw name="Input Search Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:22.909787" level="INFO">Typing text 'robot framework' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T17:04:22.909787" elapsed="0.076805"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:22.909787" elapsed="0.076805"/>
+</kw>
+<kw name="Press Enter Google Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:22.987588" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-03-14T17:04:23.285901" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T17:04:23.285901" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:22.987588" elapsed="2.149323"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:22.986592" elapsed="2.150319"/>
+</kw>
+<kw name="Verify Search Results-2">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T17:04:25.137501" elapsed="0.022429"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:25.185460" level="INFO">Current page contains text 'User'.</msg>
+<arg>${SEARCH_RESULT-2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T17:04:25.159930" elapsed="0.025530"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:25.137501" elapsed="0.047959"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:25.185460" elapsed="2.058611"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:20.878663" elapsed="6.365408"/>
+</test>
+<test id="s1-t3" name="Search Google and Verify Results-3" line="25">
+<kw name="Open Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:27.244071" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T17:04:27.244071" elapsed="1.979813"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:27.244071" elapsed="1.979813"/>
+</kw>
+<kw name="Input XSearch Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:29.223884" level="INFO">Typing text 'robot framework' into text field 'xpath://*[@name="q"]'.</msg>
+<arg>xpath://*[@name="q"]</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T17:04:29.223884" elapsed="0.071737"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:29.223884" elapsed="0.071737"/>
+</kw>
+<kw name="Press Enter Google Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:29.295621" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-03-14T17:04:29.598240" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T17:04:29.598240" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:29.295621" elapsed="2.406825"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:29.295621" elapsed="2.406825"/>
+</kw>
+<kw name="Verify Search Results-2">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T17:04:31.703447" elapsed="0.023990"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:31.745331" level="INFO">Current page contains text 'User'.</msg>
+<arg>${SEARCH_RESULT-2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T17:04:31.727437" elapsed="0.017894"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:31.702446" elapsed="0.042885"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T17:04:31.745331" elapsed="2.063175"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:27.244071" elapsed="6.564435"/>
+</test>
+<test id="s1-t4" name="Search Yahoo and Verify Results-4" line="32">
+<kw name="Open Yahoo">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:33.808506" level="INFO">Opening browser 'Chrome' to base url 'https://www.yahoo.com/'.</msg>
+<arg>https://www.yahoo.com/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T17:04:33.808506" elapsed="6.170492"/>
+</kw>
+<status status="PASS" start="2024-03-14T17:04:33.808506" elapsed="6.170492"/>
+</kw>
+<kw name="Input Search-Yahoo Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T17:04:39.979994" level="INFO">Typing text 'robot framework' into text field 'name=p'.</msg>
+<msg time="2024-03-14T17:04:39.981989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</msg>
+<msg time="2024-03-14T17:04:39.984982" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</msg>
+<arg>name=p</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-03-14T17:04:39.979994" elapsed="0.007979">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-03-14T17:04:39.979994" elapsed="0.007979">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</status>
+</kw>
+<kw name="Press Enter Yahoo Search">
+<status status="NOT RUN" start="2024-03-14T17:04:39.988971" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Search Results-Yahoo">
+<status status="NOT RUN" start="2024-03-14T17:04:39.988971" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-14T17:04:39.988971" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-14T17:04:33.808506" elapsed="6.180465">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-03-14T17:04:14.622779" elapsed="25.369183"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Google Search">Google Search</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-14T17:04:39.981989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61743AD02+56930]
+	(No symbol) [0x00007FF6173AF602]
+	(No symbol) [0x00007FF6172642E5]
+	(No symbol) [0x00007FF617241D4C]
+	(No symbol) [0x00007FF6172D23F7]
+	(No symbol) [0x00007FF6172E7891]
+	(No symbol) [0x00007FF6172CBA43]
+	(No symbol) [0x00007FF61729D438]
+	(No symbol) [0x00007FF61729E4D1]
+	GetHandleVerifier [0x00007FF6177B6F8D+3711213]
+	GetHandleVerifier [0x00007FF6178104CD+4077101]
+	GetHandleVerifier [0x00007FF61780865F+4044735]
+	GetHandleVerifier [0x00007FF6174D9736+706710]
+	(No symbol) [0x00007FF6173BB8DF]
+	(No symbol) [0x00007FF6173B6AC4]
+	(No symbol) [0x00007FF6173B6C1C]
+	(No symbol) [0x00007FF6173A68D4]
+	BaseThreadInitThunk [0x00007FFB69727614+20]
+	RtlUserThreadStart [0x00007FFB6B4226B1+33]
+</msg>
+</errors>
+</robot>
